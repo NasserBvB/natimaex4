@@ -25,7 +25,7 @@ export default function Layout({ children }: PropsWithChildren<any>) {
 export const Header = () => {
   return (
     <HeaderWrapper>
-      <Link href="/">
+      <Link href="/" passHref>
         <TitleWrapper>Natimaex</TitleWrapper>
       </Link>
       <FaCartPlus size={40} color="blue" />

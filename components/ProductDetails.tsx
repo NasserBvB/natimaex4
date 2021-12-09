@@ -11,10 +11,9 @@ export default function ProductDetails({ productId }: Props) {
     useProducts(1);
 
   useEffect(() => {
-    console.log(productId);
     
     fetchCurrentProduct(productId);
-  }, []);
+  }, []); // eslint-disable-line
 
   if (loading) {
     return (
