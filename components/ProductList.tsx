@@ -6,19 +6,17 @@ import { LoaderWrapper, ProductsListWrapper } from "./styles/procutsList";
 export default function ProductList() {
   const [pageNumber, setPageNumber] = useState(1);
   const { productList, loading, hasMore } = useProducts(pageNumber);
-
-  const observer = useRef<HTMLDivElement>(null);
+  const observer = useRef<HTMLDivElement | null>(null);
 
   const lastProductRef = useCallback(
     (node: any) => {
       if (loading) return;
       if (observer?.current) (observer?.current as any).disconnect();
-      // disable-next-next-line
       observer.current = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting && hasMore) {
           setPageNumber((prevPageNumber) => prevPageNumber + 1);
         }
-      });
+      }) as any;
       if (node) (observer?.current as any).observe(node);
     },
     [loading, hasMore]

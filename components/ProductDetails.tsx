@@ -11,6 +11,8 @@ export default function ProductDetails({ productId }: Props) {
     useProducts(1);
 
   useEffect(() => {
+    console.log(productId);
+    
     fetchCurrentProduct(productId);
   }, []);
 
@@ -26,16 +28,13 @@ export default function ProductDetails({ productId }: Props) {
     );
   }
 
-  console.log(currentProduct);
-  console.log(relatedProducts);
-  console.log(productId);
-  
-
-  return <div>
+  return (
+    <div>
       <div>current product</div>
       <pre>{JSON.stringify(currentProduct, null, 2)}</pre>
 
       <div>Related products</div>
       <pre>{JSON.stringify(relatedProducts, null, 3)}</pre>
-  </div>;
+    </div>
+  );
 }
