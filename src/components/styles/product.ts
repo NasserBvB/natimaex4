@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import Image from "next/image";
 export const ProductWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -12,7 +11,7 @@ export const ProductWrapper = styled.div`
   }
 `;
 
-export const ProductImage = styled(Image)`
+export const ProductImage = styled.img`
   display: block;
   max-width: 50rem;
   transition: transform 0.5s ease;

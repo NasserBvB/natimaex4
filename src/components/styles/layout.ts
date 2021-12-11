@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
-export const MainWrapper = styled.main`
+export const LayoutWrapper = styled.div``
+
+export const ContentWrapper = styled.main`
   display: flex;
   flex-direction: column;
   margin: auto 2rem;
@@ -20,7 +22,7 @@ export const TitleWrapper = styled.a`
   text-decoration-color: #eaeaea;
   text-decoration-style: double;
   text-decoration-thickness: 1px;
-  color: blue;
+  color: #eaeaea;
   font-size: xx-large;
   cursor: pointer;
 `;

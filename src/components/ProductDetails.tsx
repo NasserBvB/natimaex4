@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import useProducts from "../hooks/useProducts";
 import { LoaderWrapper } from "./styles/procutsList";
 
@@ -6,16 +7,17 @@ type Props = {
   productId: string | string[] | undefined;
 };
 
-export default function ProductDetails({ productId }: Props) {
+export default function ProductDetails() {
+  const params = useParams();
+  const productId = params.productId;
   const { fetchCurrentProduct, currentProduct, relatedProducts, loading } =
     useProducts(1);
 
   useEffect(() => {
-    
     fetchCurrentProduct(productId);
-  }, []); // eslint-disable-line
+  }, [productId]); // eslint-disable-line
 
-  if (loading) {
+  if (loading || !currentProduct) {
     return (
       <LoaderWrapper
         type="TailSpin"

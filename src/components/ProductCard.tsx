@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import { Link } from "react-router-dom";
 import { IProduct } from "../types";
 import {
   ProductImage,
@@ -13,14 +13,9 @@ export const Product = React.forwardRef(function GetProduct(
   ref: any
 ) {
   return (
-    <Link href={`/products/${id}`} passHref>
+    <Link to={`/products/${id}`}>
       <ProductWrapper ref={ref}>
-        <ProductImage
-          src={image}
-          width="100%"
-          height="100%"
-          layout="responsive"
-        />
+        <ProductImage src={image} width="100%" height="100%" />
         <ProductTitle>{title}</ProductTitle>
         <ProductPrice>{price} MAD</ProductPrice>
       </ProductWrapper>
