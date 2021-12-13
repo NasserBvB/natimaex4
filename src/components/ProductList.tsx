@@ -1,5 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import useProducts from "../hooks/useProducts";
+import { Categories } from "./Categories";
 import { ProductCard } from "./ProductCard";
 import { LoaderWrapper, ProductsListWrapper } from "./styles/procutsList";
 
@@ -24,6 +25,7 @@ export default function ProductList() {
 
   return (
     <>
+      <Categories filter="some"/>
       <ProductsListWrapper>
         {productList.map((product, index) => {
           if (index + 1 === productList.length)

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import useProducts from "../hooks/useProducts";
+import { Categories } from "./Categories";
 import { ProductCard } from "./ProductCard";
 import Rating from "./Rating";
 import { LoaderWrapper } from "./styles/procutsList";
@@ -39,6 +40,7 @@ export default function ProductDetails() {
 
   return (
     <ProductDetailsWrapper>
+      <Categories filter="some"/>
       <ProductDetailsHeader>
         <ProductDetailsImage src={currentProduct.image} />
         <ProductDetailsInfo>

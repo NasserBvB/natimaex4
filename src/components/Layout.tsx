@@ -26,7 +26,6 @@ export default function Layout({ children }: PropsWithChildren<any>) {
   return (
     <LayoutWrapper>
       <Header />
-      {/* <Categories/> */}
       <ContentWrapper>{children}</ContentWrapper>
       <FooterWrapper>Natimaex {new Date().getFullYear()}</FooterWrapper>
     </LayoutWrapper>
