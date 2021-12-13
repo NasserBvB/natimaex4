@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
-export const LayoutWrapper = styled.div``
+export const LayoutWrapper = styled.div``;
 
 export const ContentWrapper = styled.main`
   display: flex;

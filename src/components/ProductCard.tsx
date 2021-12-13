@@ -4,28 +4,25 @@ import { IProduct } from "../types";
 import Rating from "./Rating";
 import {
   MoreDetails,
-  ProductFooterCard,
   ProductImage,
   ProductPrice,
   ProductTitle,
   ProductWrapper
 } from "./styles/product";
 
-export const Product = React.forwardRef(function GetProduct(
-  { image, price, title, id, rating }: IProduct,
+export const ProductCard = React.forwardRef(function GetProduct(
+  { image, price, title, id, rating, hoverable }: IProduct & {hoverable?: boolean},
   ref: any
 ) {
   return (
-    <ProductWrapper ref={ref}>
+    <ProductWrapper hoverable={hoverable} ref={ref}>
       <ProductImage src={image} width="100%" height="100%" />
       <ProductTitle>{title}</ProductTitle>
       <ProductPrice>{price} MAD</ProductPrice>
-      <ProductFooterCard>
-        <Rating {...rating} />
-        <Link to={`/products/${id}`}>
-          <MoreDetails>Details</MoreDetails>
-        </Link>
-      </ProductFooterCard>
+      <Rating {...rating} />
+      <Link to={`/products/${id}`}>
+        <MoreDetails>Details</MoreDetails>
+      </Link>
     </ProductWrapper>
   );
 });

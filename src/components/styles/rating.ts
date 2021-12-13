@@ -1,7 +1,8 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 export const RatingWrapper = styled.div`
   display: flex;
-  align-items: center;
   gap: 12px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 `;

@@ -1,8 +1,19 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useProducts from "../hooks/useProducts";
+import { ProductCard } from "./ProductCard";
+import Rating from "./Rating";
 import { LoaderWrapper } from "./styles/procutsList";
-
+import {
+  ProductDetailsDescription,
+  ProductDetailsHeader,
+  ProductDetailsImage,
+  ProductDetailsInfo,
+  ProductDetailsPrice,
+  ProductDetailsTitle,
+  ProductDetailsWrapper,
+  RelatedProducts
+} from "./styles/productDetails";
 
 export default function ProductDetails() {
   const params = useParams();
@@ -27,12 +38,25 @@ export default function ProductDetails() {
   }
 
   return (
-    <div>
-      <div>current product</div>
-      <pre>{JSON.stringify(currentProduct, null, 2)}</pre>
-
-      <div>Related products</div>
-      <pre>{JSON.stringify(relatedProducts, null, 3)}</pre>
-    </div>
+    <ProductDetailsWrapper>
+      <ProductDetailsHeader>
+        <ProductDetailsImage src={currentProduct.image} />
+        <ProductDetailsInfo>
+          <ProductDetailsTitle>{currentProduct.title}</ProductDetailsTitle>
+          <ProductDetailsPrice>{currentProduct.price} MAD</ProductDetailsPrice>
+          <ProductDetailsDescription>
+            {currentProduct.description}
+          </ProductDetailsDescription>
+          <Rating {...currentProduct.rating} />
+        </ProductDetailsInfo>
+      </ProductDetailsHeader>
+      <ProductDetailsTitle>Related products </ProductDetailsTitle> 
+      <RelatedProducts>
+        {relatedProducts.map((product) => (
+          <ProductCard key={product.id} {...product} />
+        ))}
+       <Link to="#">Voir Plus...</Link>
+      </RelatedProducts>
+    </ProductDetailsWrapper>
   );
 }

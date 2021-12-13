@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import useProducts from "../hooks/useProducts";
-import { Product } from "./ProductCard";
+import { ProductCard } from "./ProductCard";
 import { LoaderWrapper, ProductsListWrapper } from "./styles/procutsList";
 
 export default function ProductList() {
@@ -8,27 +8,34 @@ export default function ProductList() {
   const { productList, loading, hasMore } = useProducts(pageNumber);
   const observer = useRef<HTMLDivElement | null>(null);
 
-  // const lastProductRef = useCallback(
-  //   (node: any) => {
-  //     if (loading) return;
-  //     if (observer?.current) (observer?.current as any).disconnect();
-  //     observer.current = new IntersectionObserver((entries) => {
-  //       if (entries[0].isIntersecting && hasMore) {
-  //         setPageNumber((prevPageNumber) => prevPageNumber + 1);
-  //       }
-  //     }) as any;
-  //     if (node) (observer?.current as any).observe(node);
-  //   },
-  //   [loading, hasMore]
-  // );
+  const lastProductRef = useCallback(
+    (node: any) => {
+      if (loading) return;
+      if (observer?.current) (observer?.current as any).disconnect();
+      observer.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && hasMore) {
+          setPageNumber((prevPageNumber) => prevPageNumber + 1);
+        }
+      }) as any;
+      if (node) (observer?.current as any).observe(node);
+    },
+    [loading, hasMore]
+  );
 
   return (
     <>
       <ProductsListWrapper>
         {productList.map((product, index) => {
-          // if (index + 1 === productList.length)
-          //   return <Product ref={lastProductRef} key={index} {...product} />;
-          return <Product {...product} key={index} />;
+          if (index + 1 === productList.length)
+            return (
+              <ProductCard
+                hoverable
+                ref={lastProductRef}
+                key={index}
+                {...product}
+              />
+            );
+          return <ProductCard hoverable {...product} key={index} />;
         })}
       </ProductsListWrapper>
       {loading && (

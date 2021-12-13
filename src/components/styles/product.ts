@@ -1,20 +1,29 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 import { colors } from "./colors";
-export const ProductWrapper = styled.div`
+interface Props {
+  hoverable?: boolean;
+}
+export const ProductWrapper = styled.div<Props>`
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  align-items: center;
 
   padding: 1rem;
 
-  &:hover {
-    transform: scale(1.2);
-  }
+  ${(props) =>
+    !!props.hoverable &&
+    `
+    &:hover {
+      transform: scale(1.2);
+    }
+    `}
 `;
 
 export const ProductImage = styled.img`
   display: block;
-  max-width: 50rem;
+  max-width: 400px;
+  max-height: 400px;
   transition: transform 0.5s ease;
 `;
 
@@ -34,13 +43,6 @@ export const ProductPrice = styled.p`
   font-weight: bolder;
 `;
 
-export const ProductFooterCard = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-`;
-
 export const MoreDetails = styled.button`
   outline: none;
   border: none;
@@ -49,4 +51,5 @@ export const MoreDetails = styled.button`
   min-width: 10rem;
   padding: 0.5rem;
   cursor: pointer;
+  border-radius: 4px;
 `;
