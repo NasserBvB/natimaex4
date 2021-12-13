@@ -5,4 +5,10 @@ export interface IProduct {
   category: string;
   description: string;
   image: string;
+  rating: IRating;
+}
+
+export interface IRating {
+  count: number;
+  rate: number;
 }

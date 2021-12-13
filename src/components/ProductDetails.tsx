@@ -3,9 +3,6 @@ import { useParams } from "react-router-dom";
 import useProducts from "../hooks/useProducts";
 import { LoaderWrapper } from "./styles/procutsList";
 
-type Props = {
-  productId: string | string[] | undefined;
-};
 
 export default function ProductDetails() {
   const params = useParams();
