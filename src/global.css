@@ -5,3 +5,12 @@
 a {
   text-decoration: none;
 }
+
+.dropdown {
+  background: transparent;
+}
+
+.myMenuClassName {
+  height: max-content;
+  overflow-y: hidden;
+}

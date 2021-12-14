@@ -18,7 +18,7 @@ const useProducts = (pageNumber: number) => {
       const response = await fetch(`https://fakestoreapi.com/products`);
       const data = await response.json();
       setProductList((prev) => [...prev, ...data]);
-      setHasMore(data.length > 0);
+      setHasMore(productList.length < 30);
     } catch (error) {
       setError(true);
     } finally {
