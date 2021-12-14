@@ -36,6 +36,7 @@ export const HeaderWrapper = styled.header`
   & > a {
     color: white;
   }
+  z-index: 10;
 `;
 
 export const Links = styled.div`
@@ -95,7 +96,7 @@ export const FooterContactForm = styled.form`
   display: flex;
   gap: 12px;
   flex-direction: column;
-  flex: 2;
+  flex: 1.5;
   & > input[type="submit"] {
     border: none;
     outline: none;

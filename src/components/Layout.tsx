@@ -4,7 +4,7 @@ import {
   BsInstagram,
   BsTelegram,
   BsTwitter,
-  BsYoutube,
+  BsYoutube
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { DropDown } from "./shared/dropdown";
@@ -21,7 +21,7 @@ import {
   LayoutWrapper,
   Links,
   Search,
-  SocialMediaBox,
+  SocialMediaBox
 } from "./styles/layout";
 
 export default function Layout({ children }: PropsWithChildren<any>) {
@@ -118,7 +118,7 @@ export const Footer = () => {
           type="email"
           placeholder="Votre adresse email"
         />
-        <FooterContactFormTextArea placeholder="Votre message ..." rows={5} />
+        <FooterContactFormTextArea placeholder="Votre message ..." rows={15} />
         <FooterContactFormInput value="Envoyer" type="submit" />
       </FooterContactForm>
       <FooterSocialMedia>
