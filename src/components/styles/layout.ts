@@ -14,7 +14,7 @@ export const LayoutWrapper = styled.div`
 export const ContentWrapper = styled.main`
   display: flex;
   flex-direction: column;
-  margin: 5rem 2rem;
+  margin: 8rem 2rem;
   min-height: 90vh;
 `;
 
@@ -39,7 +39,7 @@ export const HeaderWrapper = styled.header`
   z-index: 10;
 `;
 
-export const Links = styled.div`
+export const Links = styled.div<{ flexDirection?: "column" | "row" }>`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -47,6 +47,17 @@ export const Links = styled.div`
   & > a {
     color: white;
   }
+  ${(props) =>
+    props.flexDirection === "column" &&
+    `
+      margin-top: 1rem;
+      flex-direction: ${props.flexDirection};
+      align-items: flex-start;
+      padding: 0 1rem;
+      &>div{
+        margin-left: -1rem;
+      }
+  `}
 `;
 
 export const Search = styled.input`

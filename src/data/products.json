@@ -1,0 +1,500 @@
+[
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/CS-UE12WKF-9.jpg",
+    "price": "3999",
+    "properties": [
+      {
+        "label": "Categories",
+        "content": ["Air Conditioners", "Split Air Conditioner", "Inverter"]
+      },
+      {
+        "label": "Key features",
+        "content": ["DC Inverter", "Quick Cooling and Less energy Consumption"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Panasonic"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/2444FHI.jpg",
+    "price": "40000",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "4D airflow",
+          "Up to 60% Energy Efficient",
+          "Drying and anti-Fungus",
+          "Intelligent wind protection",
+          "Deep sleep mode",
+          "Quick cooling & heating",
+          "Power-down memory",
+          "Longer air throw:20m",
+          "Self-diagnosis",
+          "140°panoramic sweep wind",
+          "Wind speed steeples adjustment"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["Air Conditioners", "Floor Standig", "Inverter"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Kenwood"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/eECO-Plus-Metallic-Grey-KEE-1235S.jpg",
+    "price": "5000",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Up to 75% Energy Efficient",
+          "UVC light ensures bacteria-free clean air",
+          "Anti-rust coating",
+          "Golden fins",
+          "Low voltage operation (145V-260V)",
+          "For all weather conditions",
+          "Hidden LED display",
+          "Auto restart",
+          "Turbo operation",
+          "Sleep mode",
+          "Inner-grooved copper tube",
+          "24 hr timer",
+          "100% Copper pipe",
+          "Powerful air-flow",
+          "Heat & Cool Function",
+          "2 Year PCB Warranty",
+          "5+1 Nation Wide Warranty"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["Air Conditioners", "Split Air Conditioner", "Inverter"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Kenwood"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/KETplus-.jpg",
+    "price": "6900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Climate Control T1",
+          "Refrigerant leakage detection",
+          "Self-diagnosis and auto-protection",
+          "Auto-restart function",
+          "Sleep mode",
+          "High-efficiency tube",
+          "2-way draining",
+          "Golden fin",
+          "Heat & Cool Function",
+          "Eco- Friendly R410Gas",
+          "2 Year PCB Warranty",
+          "3+1 Nation Wide Warranty"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["Air Conditioners", "Split Air Conditioner", "Non-Inverter"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Kenwood"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/ImperialKEI-2441.jpg",
+    "price": "12900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "R 22 Gas",
+          "LED Display",
+          "Golden Fins Condenser",
+          "Cool Only",
+          "Auto Restart",
+          "3 Year Warranty"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["Air Conditioners", "Floor Standing", "Non-Inverter"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Kenwood"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/9173-FH-Chrome-1.jpg",
+    "price": "12900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Nature Lock Technology",
+          "5 Way cooling + 30% faster cooling",
+          "Optimized Fan with Deodorizing Filter",
+          "Side Illumination LED",
+          "Inverter Technology",
+          "A++ Energy Rating",
+          "55% Less electricity consumption"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": [
+          "Refrigerators",
+          "Top Mount",
+          "Dawlance 9191 WB CHROME Plus"
+        ]
+      },
+      {
+        "label": "Brand",
+        "content": ["Dawnlance"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/91999-avante-color-2.jpg",
+    "price": "14900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Vitamin Fresh Technology",
+          "5 Way cooling + 30% faster cooling",
+          "Optimized Fan with Deodorizing Filter",
+          "Side Illumination LED",
+          "Low voltage technology",
+          "A+ Energy Rating"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["Refrigerators", "Top Mount", "Dawlance 91999 WB Avante GD"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Dawnlance"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/Panasonic-BS701G.jpg",
+    "price": "19900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": ["Glass Door", "Multi Air Flow", "Eco LED light"]
+      },
+      {
+        "label": "Categories",
+        "content": ["Refrigerators", "side by Side", "Panasonic BS701G"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Panasonic"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/DW-900-DFD.jpg",
+    "price": "29900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Up to 55% energy saving",
+          "Inverter technology",
+          "Deeper and wider body – 90cm wide product",
+          "Pillar-less design for big pots",
+          "Low voltage start-up 135V",
+          "12 years Compressor Warranty"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["Refrigerators", "French Door", "Dawlance – DW 900 GD DFD"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Dawlance"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/Hitachi-760-L-French-Door-Refrigerator-With-Water-Dispenser-RW760.jpg",
+    "price": "29900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Four door Big French Refrigerator",
+          "Inverter Control x Dual Fan cooling",
+          "BEST ENERGY STAR RATING 3 STAR ESMA CERTIFIED",
+          "Big super Moisture Guard Vegetable compartment",
+          "Touch Screen Controller",
+          "Dual Sensing Control (Eco Thermo Sensor)",
+          "Tempered Glass Shelves",
+          "Movable Twist Ice Tray",
+          "LED Light",
+          "Powerful Cooling at 60C"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["Refrigerators", "French Door", "Hitachi 760 L / RW760"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Hitachi"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/cX-32U576.jpg",
+    "price": "9900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Screen Size: 32inch",
+          "LED: Regular",
+          "Resolution: 1,366 x 768 (HD Ready)",
+          "USB Connectivity: Video,Audio,Images"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": [
+          "LED Television",
+          "ECOSTAR – LED TV – CX-32U576 A+ 32inch INCH"
+        ]
+      },
+      {
+        "label": "Brand",
+        "content": ["ECOSTAR"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/725.jpeg",
+    "price": "15900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": ["TCL – LED TV C725"]
+      },
+      {
+        "label": "Categories",
+        "content": ["LED Television", "TCL – LED TV C725"]
+      },
+      {
+        "label": "Brand",
+        "content": ["TCL"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/TCL815.jpeg",
+    "price": "12900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "C815 series with its Quantum Dot display transform your TV viewing experience. QLED display presents a richer and brighter color than ever before and improves the performance of color. Its Dolby Vision and HDR10+ provide you extraordinary color, contrast, and brightness to the screen, so you can get perfect picture quality in every scene. Now you can talk to your TV directly, and easy access to your favorite content with an integrated Hands-Free Voice Control Feature.",
+          "The IPQ Engine with AI Technology dynamically improves the display effect and its detail enhancing, make the picture more layered and content details richer. Enjoy an incredibly immersive Dolby Atmos sound experience for your movies, music, and video games, and its Onkyo high-class 2.1 sound system with Subwoofer give your cinema-quality audio.",
+          "Powered by the advanced AI technology and the latest TCL Android OS, its equipped with MEMC, Micro Dimming, Dolby Audio, DTS Sound, Chromecast built-in function & Google Assistant."
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["LED Television", "TCL – LED TV C815"]
+      },
+      {
+        "label": "Brand",
+        "content": ["TCL"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/L40D3000.jpg",
+    "price": "14900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": ["TCL – LED TV 40″ D3000"]
+      },
+      {
+        "label": "Categories",
+        "content": ["LED Television", "TCL – LED TV 40″ D3000"]
+      },
+      {
+        "label": "Brand",
+        "content": ["TCL"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/L32s6500.jpg",
+    "price": "11900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Powered by the latest AI embedded technology and TCL Android TV OS, the S6500 FHD is part of TCL’s expanding range of AI TV products that provide consumers with simple, personalized life experience. The S6500 comes equipped with perfect FHD Display, HDR function, Google Assistant, Chromecast built-in function in a supreme show of elegance, the S6500 giving the TV a classy look!"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": ["LED Television", "TCL – LED TV S6500"]
+      },
+      {
+        "label": "Brand",
+        "content": ["TCL"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/85400.jpeg",
+    "price": "3900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "8 Kg Wash and 5Kg Dry Capacity",
+          "Inverter Technology",
+          "Hygiene Wash + Drying",
+          "Embroidery Care Program",
+          "Special Algorithms for Wool",
+          "Energy Rating of A",
+          "Warranty: 10 years inverter motor warranty"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": [
+          "Washing Machines",
+          "Front Load Automatic",
+          "Dawlance DWD 85400"
+        ]
+      },
+      {
+        "label": "Brand",
+        "content": ["Dawlance"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/images-2.jpeg",
+    "price": "4900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Kenwood fully automatic washing machines that do all the work by themselves with no manual interruption and extra effort required. The entire washing process is done with only the touch of a button so that you can enjoy what you love most."
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": [
+          "Washing Machines",
+          "Top Load Automatic",
+          "Kenwood Automatic Washing Machine KWM-7001FAT-W"
+        ]
+      },
+      {
+        "label": "Brand",
+        "content": ["Kenwood"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/8200.jpeg",
+    "price": "7900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "8 Kg Wash Capacity",
+          "Steam Care Technology",
+          "Remote Connectivity through HomeWhiz Bluetooth",
+          "Hygiene Wash kills upto 99.9 % Bacteria",
+          "Special Algorithms for Wools",
+          "Stain Buster Technology",
+          "Warranty: 10 years inverter Motor Warranty",
+          "Energy Rating of A+++(-10%)"
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": [
+          "Washing Machines",
+          "Front Load Automatic",
+          "Dawlance DWF 8200 X INV"
+        ]
+      },
+      {
+        "label": "Brand",
+        "content": ["Dawlance"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/ab50fb32f1626e427180e94e35992e55.jpg",
+    "price": "6900",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": [
+          "Kenwood fully automatic washing machines that do all the work by themselves with no manual interruption and extra effort required. The entire washing process is done with only the touch of a button so that you can enjoy what you love most."
+        ]
+      },
+      {
+        "label": "Categories",
+        "content": [
+          "Washing Machines",
+          "Top Load Automatic",
+          "Kenwood Automatic Washing Machine KWM-9003FAT-GD"
+        ]
+      },
+      {
+        "label": "Brand",
+        "content": ["Kenwood"]
+      }
+    ]
+  },
+  {
+    "image": "https://regalelectronics.pk/wp-content/uploads/7500C.jpg",
+    "price": "8990",
+    "properties": [
+      {
+        "label": "Key features",
+        "content": ["Dawlance DW 7500 C"]
+      },
+      {
+        "label": "Categories",
+        "content": ["Washing Machines", "Twin Tube", "Dawlance DW 7500 C"]
+      },
+      {
+        "label": "Brand",
+        "content": ["Dawlance"]
+      }
+    ]
+  }
+]

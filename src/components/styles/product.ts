@@ -29,7 +29,7 @@ export const ProductImage = styled.img`
 
 export const ProductTitle = styled.h2`
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: ${colors.primary};
 `;
 
