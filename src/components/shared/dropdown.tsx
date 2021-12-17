@@ -31,10 +31,13 @@ export const DropDownContent = styled.div<Props>`
   z-index: 1;
 
   ${(props) =>
-    props.disposion === "horizontal" &&
-    `
+    props.disposion === "horizontal"
+      ? `
       top: 0;
       left: 101%;
+      `
+      : `
+      left: -20%;
       `}
 
   ${(props) =>
@@ -47,7 +50,7 @@ export const DropDownContent = styled.div<Props>`
   display: none;
   flex-direction: column;
 
-  width: 100%;
+  width: fit-content;
   min-width: 160px;
   color: ${colors.primary};
 
