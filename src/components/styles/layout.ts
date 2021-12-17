@@ -22,21 +22,21 @@ export const ContentWrapper = styled.main`
  * Header styles
  */
 export const HeaderWrapper = styled.header`
-  position: fixed;
-  top: 0;
+  position: sticky;
   background-color: ${colors.primary};
-  width: 98%;
+  top: 0;
 
   display: flex;
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
+
   border-bottom: 1px solid #eaeaea;
   padding: 1rem;
   & > a {
     color: white;
   }
-  z-index: 10;
+  z-index: 100;
 `;
 
 export const Links = styled.div<{ flexDirection?: "column" | "row" }>`
@@ -88,6 +88,7 @@ export const FooterWrapper = styled.footer`
   flex-wrap: wrap;
   padding: 1rem;
   gap: 1rem;
+  background-color: #e6e6e6;
 `;
 
 export const FooterLinks = styled.div`

@@ -8,6 +8,7 @@ import {
 import { IoMdMenu } from "react-icons/io";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import Search from "./Search";
 import Drawer from "./shared/drawer";
 import { DropDown } from "./shared/dropdown";
 import { colors } from "./styles/colors";
@@ -22,7 +23,6 @@ import {
   HeaderWrapper,
   LayoutWrapper,
   Links,
-  Search,
   SocialMediaBox
 } from "./styles/layout";
 
@@ -49,14 +49,14 @@ export const Header = () => {
     <Links
       flexDirection={isExtraLarge || isLarge || isMedium ? "row" : "column"}
     >
-      <Link to="/">NATIMAEX</Link>
+      <Link to="/">Acceuil</Link>
       <DropDown title="Climatiseurs">
         <DropDown
           title="Debout au sol"
           color={colors.primary}
           disposion="horizontal"
         >
-          <Link to="/climatiseurs/onduleur">Onduleur</Link>
+          <Link to="#">Onduleur</Link>
           <Link to="/climatiseurs/non-onduleur">Non Onduleur</Link>
         </DropDown>
         <DropDown
@@ -64,34 +64,34 @@ export const Header = () => {
           color={colors.primary}
           disposion="horizontal"
         >
-          <Link to="/climatiseurs/onduleur">Onduleur</Link>
+          <Link to="#">Onduleur</Link>
           <Link to="/climatiseurs/non-onduleur">Non Onduleur</Link>
         </DropDown>
       </DropDown>
       <DropDown title="Réfrigérateurs">
-        <Link to="/climatiseurs/onduleur">Monture supérieure</Link>
-        <Link to="/climatiseurs/onduleur">Porte simple</Link>
-        <Link to="/climatiseurs/onduleur">Cote à cote</Link>
-        <Link to="/climatiseurs/onduleur">Porte française</Link>
+        <Link to="#">Monture supérieure</Link>
+        <Link to="#">Porte simple</Link>
+        <Link to="#">Cote à cote</Link>
+        <Link to="#">Porte française</Link>
       </DropDown>
       <DropDown title="Appareils ménagers">
-        <Link to="/climatiseurs/onduleur">Distributeurs d'eau</Link>
+        <Link to="#">Distributeurs d'eau</Link>
       </DropDown>
       <DropDown title="Machines à laver">
-        <Link to="/climatiseurs/onduleur">Séchoir à cuve simple</Link>
-        <Link to="/climatiseurs/onduleur">Laveuse à cuve simple</Link>
-        <Link to="/climatiseurs/onduleur">Baignoire jumelle</Link>
-        <Link to="/climatiseurs/onduleur">Chargement frontal automatique</Link>
-        <Link to="/climatiseurs/onduleur">
+        <Link to="#">Séchoir à cuve simple</Link>
+        <Link to="#">Laveuse à cuve simple</Link>
+        <Link to="#">Baignoire jumelle</Link>
+        <Link to="#">Chargement frontal automatique</Link>
+        <Link to="#">
           Chargement par le haut automatique
         </Link>
       </DropDown>
       <DropDown title="Congélateurs">
-        <Link to="/climatiseurs/onduleur">Congélateurs verticaux</Link>
-        <Link to="/climatiseurs/onduleur">Congélateurs coffres</Link>
+        <Link to="#">Congélateurs verticaux</Link>
+        <Link to="#">Congélateurs coffres</Link>
       </DropDown>
-      <Link to="/climatiseurs/onduleur">Forfait mariage</Link>
-      <Link to="/climatiseurs/onduleur">Télévision LED</Link>
+      <Link to="#">Forfait mariage</Link>
+      <Link to="#">Télévision LED</Link>
     </Links>
   );
 
@@ -112,7 +112,7 @@ export const Header = () => {
           color="white"
         />
       )}
-      <Search placeholder="recherche..." />
+      <Search />
     </HeaderWrapper>
   );
 };
@@ -122,23 +122,23 @@ export const Footer = () => {
     <FooterWrapper>
       <FooterLinks>
         <h3>Voir aussi :</h3>
-        <Link to="/climatiseurs/onduleur">Onduleur</Link>
+        <Link to="#">Onduleur</Link>
         <Link to="/climatiseurs/non-onduleur">Non Onduleur</Link>
-        <Link to="/climatiseurs/onduleur">Monture supérieure</Link>
-        <Link to="/climatiseurs/onduleur">Porte simple</Link>
-        <Link to="/climatiseurs/onduleur">Cote à cote</Link>
-        <Link to="/climatiseurs/onduleur">Porte française</Link>
-        <Link to="/climatiseurs/onduleur">Télévision LED</Link>
-        <Link to="/climatiseurs/onduleur">Séchoir à cuve simple</Link>
-        <Link to="/climatiseurs/onduleur">Laveuse à cuve simple</Link>
-        <Link to="/climatiseurs/onduleur">Baignoire jumelle</Link>
-        <Link to="/climatiseurs/onduleur">Chargement frontal automatique</Link>
-        <Link to="/climatiseurs/onduleur">
+        <Link to="#">Monture supérieure</Link>
+        <Link to="#">Porte simple</Link>
+        <Link to="#">Cote à cote</Link>
+        <Link to="#">Porte française</Link>
+        <Link to="#">Télévision LED</Link>
+        <Link to="#">Séchoir à cuve simple</Link>
+        <Link to="#">Laveuse à cuve simple</Link>
+        <Link to="#">Baignoire jumelle</Link>
+        <Link to="#">Chargement frontal automatique</Link>
+        <Link to="#">
           Chargement par le haut automatique
         </Link>
-        <Link to="/climatiseurs/onduleur">Congélateurs verticaux</Link>
-        <Link to="/climatiseurs/onduleur">Congélateurs coffres</Link>
-        <Link to="/climatiseurs/onduleur">Forfait mariage</Link>
+        <Link to="#">Congélateurs verticaux</Link>
+        <Link to="#">Congélateurs coffres</Link>
+        <Link to="#">Forfait mariage</Link>
       </FooterLinks>
       <FooterContactForm>
         <h3>Vos messages sont les bienvenue :</h3>

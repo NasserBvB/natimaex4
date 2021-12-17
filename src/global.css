@@ -1,5 +1,8 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 * {
-    font-family: 'Fira Code', monospace;
+    /* font-family: 'Fira Code', monospace; */
+    font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
 }
 
@@ -14,4 +17,7 @@ a {
 .myMenuClassName {
   height: max-content;
   overflow-y: hidden;
+}
+.image-gallery-image-custom {
+  background-color: #e6e6e6;
 }

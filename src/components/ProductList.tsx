@@ -1,6 +1,7 @@
 import React, { useCallback, useRef, useState } from "react";
+import ImageGallery from "react-image-gallery";
+import { images } from "../data/products";
 import useProducts from "../hooks/useProducts";
-import { Categories } from "./Categories";
 import { ProductCard } from "./ProductCard";
 import { LoaderWrapper, ProductsListWrapper } from "./styles/procutsList";
 
@@ -25,7 +26,17 @@ export default function ProductList() {
 
   return (
     <>
-      <Categories filter="some"/>
+      <ImageGallery
+        autoPlay
+        showFullscreenButton={false}
+        showPlayButton={false}
+        showThumbnails={false}
+        showBullets
+        showNav={false}
+        items={images}
+        slideInterval={5000}
+        additionalClass="image-gallery-image-custom"
+      />
       <ProductsListWrapper>
         {productList.map((product, index) => {
           if (index + 1 === productList.length)

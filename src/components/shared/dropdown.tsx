@@ -37,6 +37,13 @@ export const DropDownContent = styled.div<Props>`
       left: 101%;
       `}
 
+  ${(props) =>
+    props.maxHeight &&
+    `
+  max-height: ${props.maxHeight};
+  overflow-y: auto;
+  `}
+
   display: none;
   flex-direction: column;
 
@@ -61,6 +68,9 @@ export const DropDownContent = styled.div<Props>`
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   disposion?: "horizontal" | "vertical";
   color?: string;
+  trigger?: React.ReactNode;
+  icon?: React.ReactNode;
+  maxHeight?: string;
 }
 
 export const DropDown = ({
@@ -68,19 +78,27 @@ export const DropDown = ({
   title,
   disposion = "vertical",
   color = "white",
+  trigger,
+  icon,
+  maxHeight,
   ...props
 }: Props) => {
   return (
     <DropDownWrapper color={color} {...props}>
       <span>
-        {title}
-        {disposion === "vertical" ? (
-          <IoMdArrowDropdown id="vertical" size={25} />
-        ) : (
-          <IoMdArrowDropright id="horizontal" size={25} />
-        )}
+        {title || trigger}
+        {!icon &&
+          (disposion === "vertical" ? (
+            <IoMdArrowDropdown id="vertical" size={25} />
+          ) : (
+            <IoMdArrowDropright id="horizontal" size={25} />
+          ))}
+
+        {icon && icon}
       </span>
-      <DropDownContent disposion={disposion}>{children}</DropDownContent>
+      <DropDownContent maxHeight={maxHeight} disposion={disposion}>
+        {children}
+      </DropDownContent>
     </DropDownWrapper>
   );
 };
