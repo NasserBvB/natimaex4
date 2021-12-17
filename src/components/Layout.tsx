@@ -1,9 +1,10 @@
 import React, { PropsWithChildren } from "react";
 import {
   BsFacebook,
-  BsInstagram, BsTelegram,
+  BsInstagram,
+  BsTelegram,
   BsTwitter,
-  BsYoutube
+  BsYoutube,
 } from "react-icons/bs";
 import { IoMdMenu } from "react-icons/io";
 import { useMediaQuery } from "react-responsive";
@@ -23,7 +24,7 @@ import {
   HeaderWrapper,
   LayoutWrapper,
   Links,
-  SocialMediaBox
+  SocialMediaBox,
 } from "./styles/layout";
 
 export default function Layout({ children }: PropsWithChildren<any>) {
@@ -50,8 +51,12 @@ export const Header = () => {
       flexDirection={isExtraLarge || isLarge || isMedium ? "row" : "column"}
     >
       <Link to="/">Acceuil</Link>
-      <DropDown title="Climatiseurs">
+      <DropDown
+        shiftLeft={isExtraLarge || isLarge || isMedium}
+        title="Climatiseurs"
+      >
         <DropDown
+          shiftLeft={isExtraLarge || isLarge || isMedium}
           title="Debout au sol"
           color={colors.primary}
           disposion="horizontal"
@@ -60,6 +65,7 @@ export const Header = () => {
           <Link to="/climatiseurs/non-onduleur">Non Onduleur</Link>
         </DropDown>
         <DropDown
+          shiftLeft={isExtraLarge || isLarge || isMedium}
           title="Climatiseur split"
           color={colors.primary}
           disposion="horizontal"
@@ -68,25 +74,35 @@ export const Header = () => {
           <Link to="/climatiseurs/non-onduleur">Non Onduleur</Link>
         </DropDown>
       </DropDown>
-      <DropDown title="Réfrigérateurs">
+      <DropDown
+        shiftLeft={isExtraLarge || isLarge || isMedium}
+        title="Réfrigérateurs"
+      >
         <Link to="#">Monture supérieure</Link>
         <Link to="#">Porte simple</Link>
         <Link to="#">Cote à cote</Link>
         <Link to="#">Porte française</Link>
       </DropDown>
-      <DropDown title="Appareils ménagers">
+      <DropDown
+        shiftLeft={isExtraLarge || isLarge || isMedium}
+        title="Appareils ménagers"
+      >
         <Link to="#">Distributeurs d'eau</Link>
       </DropDown>
-      <DropDown title="Machines à laver">
+      <DropDown
+        shiftLeft={isExtraLarge || isLarge || isMedium}
+        title="Machines à laver"
+      >
         <Link to="#">Séchoir à cuve simple</Link>
         <Link to="#">Laveuse à cuve simple</Link>
         <Link to="#">Baignoire jumelle</Link>
         <Link to="#">Chargement frontal automatique</Link>
-        <Link to="#">
-          Chargement par le haut automatique
-        </Link>
+        <Link to="#">Chargement par le haut automatique</Link>
       </DropDown>
-      <DropDown title="Congélateurs">
+      <DropDown
+        shiftLeft={isExtraLarge || isLarge || isMedium}
+        title="Congélateurs"
+      >
         <Link to="#">Congélateurs verticaux</Link>
         <Link to="#">Congélateurs coffres</Link>
       </DropDown>
@@ -133,9 +149,7 @@ export const Footer = () => {
         <Link to="#">Laveuse à cuve simple</Link>
         <Link to="#">Baignoire jumelle</Link>
         <Link to="#">Chargement frontal automatique</Link>
-        <Link to="#">
-          Chargement par le haut automatique
-        </Link>
+        <Link to="#">Chargement par le haut automatique</Link>
         <Link to="#">Congélateurs verticaux</Link>
         <Link to="#">Congélateurs coffres</Link>
         <Link to="#">Forfait mariage</Link>

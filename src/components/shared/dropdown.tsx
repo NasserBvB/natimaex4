@@ -31,14 +31,13 @@ export const DropDownContent = styled.div<Props>`
   z-index: 1;
 
   ${(props) =>
-    props.disposion === "horizontal"
-      ? `
+    props.disposion === "horizontal" &&
+    `
       top: 0;
       left: 101%;
-      `
-      : `
-      left: -20%;
       `}
+  ${(props) =>
+    props.disposion === "vertical" && !!props.shiftLeft && `left: -20%;`}
 
   ${(props) =>
     props.maxHeight &&
@@ -74,6 +73,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   trigger?: React.ReactNode;
   icon?: React.ReactNode;
   maxHeight?: string;
+  shiftLeft?: boolean;
 }
 
 export const DropDown = ({
@@ -84,6 +84,7 @@ export const DropDown = ({
   trigger,
   icon,
   maxHeight,
+  shiftLeft = false,
   ...props
 }: Props) => {
   return (
@@ -99,7 +100,11 @@ export const DropDown = ({
 
         {icon && icon}
       </span>
-      <DropDownContent maxHeight={maxHeight} disposion={disposion}>
+      <DropDownContent
+        shiftLeft={shiftLeft}
+        maxHeight={maxHeight}
+        disposion={disposion}
+      >
         {children}
       </DropDownContent>
     </DropDownWrapper>
